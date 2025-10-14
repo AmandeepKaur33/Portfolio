@@ -1,7 +1,17 @@
-import Image from "next/image";
+'use client';
 
-export default function Home() {
+import About from "@/components/sections/About";
+import Home from "@/components/sections/Home";
+import Header from "@/components/ui/header";
+
+export default function Hero() {
   return (
-   <div>Portfolio</div>
+    <section className=" overflow-auto h-screen">
+      <Header/>
+      <div className="flex flex-col w-full">
+      <Home/>
+      <About/>
+      </div>
+    </section>
   );
 }
